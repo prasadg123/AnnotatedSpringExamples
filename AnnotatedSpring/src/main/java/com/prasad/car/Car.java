@@ -12,10 +12,12 @@ import org.springframework.beans.factory.annotation.Required;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import com.prasad.annot.AnotherRandomAnnotation;
 import com.prasad.annot.RandomDemoAnnotation;
 
 //@Component
-@RandomDemoAnnotation
+//@RandomDemoAnnotation
+@AnotherRandomAnnotation
 public class Car {
 	
 	private String name;
