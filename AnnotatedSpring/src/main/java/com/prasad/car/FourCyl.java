@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import com.prasad.annot.AnotherRandomAnnotation;
 import com.prasad.annot.RandomDemoAnnotation;
 
-//@Component
+@Component
 //@RandomDemoAnnotation
 //@AnotherRandomAnnotation
 public class FourCyl implements Engine{

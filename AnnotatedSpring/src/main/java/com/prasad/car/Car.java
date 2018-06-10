@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 import com.prasad.annot.AnotherRandomAnnotation;
 import com.prasad.annot.RandomDemoAnnotation;
 
-//@Component
+@Component("car")
 //@RandomDemoAnnotation
 //@AnotherRandomAnnotation
 public class Car {

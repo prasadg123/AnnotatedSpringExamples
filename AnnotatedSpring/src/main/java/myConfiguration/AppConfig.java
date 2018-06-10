@@ -1,6 +1,7 @@
 package myConfiguration;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import com.prasad.car.BigTyre;
@@ -12,9 +13,10 @@ import com.prasad.car.SmallTyre;
 import com.prasad.car.Tyre;
 
 @Configuration
+@ComponentScan({"com.prasad.car"})
 public class AppConfig {
 
-	@Bean(name="smallTyre")
+	/*@Bean(name="smallTyre")
 	public Tyre getSmallTyre() {
 		return new SmallTyre();
 	}
@@ -38,5 +40,5 @@ public class AppConfig {
 	public Car getMyCar() {
 		return new Car();
 	}
-	
+*/	
 }
