@@ -17,7 +17,7 @@ import com.prasad.annot.RandomDemoAnnotation;
 
 //@Component
 //@RandomDemoAnnotation
-@AnotherRandomAnnotation
+//@AnotherRandomAnnotation
 public class Car {
 	
 	private String name;

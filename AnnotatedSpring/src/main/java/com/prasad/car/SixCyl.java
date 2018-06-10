@@ -7,7 +7,7 @@ import com.prasad.annot.RandomDemoAnnotation;
 
 //@Component
 //@RandomDemoAnnotation
-@AnotherRandomAnnotation
+//@AnotherRandomAnnotation
 public class SixCyl implements Engine{
 
 	public int getNumberOfClinders() {

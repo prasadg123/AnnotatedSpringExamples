@@ -7,7 +7,7 @@ import com.prasad.annot.RandomDemoAnnotation;
 
 //@Component
 //@RandomDemoAnnotation
-@AnotherRandomAnnotation
+//@AnotherRandomAnnotation
 public class BigTyre implements Tyre{
 
 	public String getTyreDiameter() {
