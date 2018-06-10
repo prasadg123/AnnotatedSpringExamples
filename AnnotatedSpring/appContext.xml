@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+  	<context:annotation-config/>
+  	<context:component-scan base-package="com.prasad.car"></context:component-scan>
+<!-- <bean id="smallTyre" class="com.prasad.car.SmallTyre">
+	<qualifier value="sTyre"/>
+</bean>
+<bean id="bigTyre" class="com.prasad.car.BigTyre">
+	<qualifier value="bTyre"/>
+</bean>
+
+<bean id="fourCyl" class="com.prasad.car.FourCyl">
+	<qualifier value="fCyl"/>
+</bean>
+<bean id="sixCyl" class="com.prasad.car.SixCyl"/>
+
+<bean id="car" class="com.prasad.car.Car">
+	<property name="name" value="This is my Car"/>
+	<property name="frontLeft" ref="smallTyre"/>
+	<property name="frontRight" ref="smallTyre"/>
+	<property name="rearRight" ref="bigTyre"/>
+	<property name="rearLeft" ref="bigTyre"/>
+	<property name="engineType" ref="fourCyl"/>
+</bean>
+ --></beans>
