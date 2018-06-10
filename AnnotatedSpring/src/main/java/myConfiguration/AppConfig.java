@@ -29,14 +29,16 @@ public class AppConfig {
 		return new FourCyl();
 	}
 	
-	@Bean(name="bigTyre")
+	@Bean(name="sixCyl")
 	public Engine getSixCyl() {
 		return new SixCyl();
 	}
 	
 	@Bean(name="car")
-	public Car getMyCar() {
-		return new Car();
+	public Car getCar() {
+		
+		Car car=new Car(getSmallTyre(),getSmallTyre(),getBigTyre(),getBigTyre(),getFourCyl());
+		return car;
 	}
 	
 }

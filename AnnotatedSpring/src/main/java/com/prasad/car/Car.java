@@ -87,8 +87,8 @@ public class Car {
 	}
 
 	//@Resource(name="smallTyre")
-	@Autowired
-	@Named("smallTyre")
+//	@Autowired
+//	@Named("smallTyre")
 	//@Qualifier("smallTyre")
 	public void setFrontRight(Tyre frontRight) {
 		this.frontRight = frontRight;
@@ -99,8 +99,8 @@ public class Car {
 	}
 
 	//@Resource(name="bigTyre")
-	@Autowired
-	@Named("bigTyre")
+	/*@Autowired
+	@Named("bigTyre")*/
 	//@Qualifier("bigTyre")
 	public void setRearLeft(Tyre rearLeft) {
 		this.rearLeft = rearLeft;
@@ -111,8 +111,8 @@ public class Car {
 	}
 
 	//@Resource(name="bigTyre")
-	@Autowired
-	@Named("bigTyre")
+	/*@Autowired
+	@Named("bigTyre")*/
 	//@Qualifier("bigTyre")
 	public void setRearRight(Tyre rearRight) {
 		this.rearRight = rearRight;
@@ -123,8 +123,8 @@ public class Car {
 	}
 
 	//@Resource(name="fourCyl")
-	@Autowired
-	@Named("fourCyl")
+	/*@Autowired
+	@Named("fourCyl")*/
 	//@Qualifier("fourCyl")
 	public void setEngineType(Engine engineType) {
 		this.engineType = engineType;
@@ -135,8 +135,17 @@ public class Car {
 	}
 	
 	//@Autowired
-	@Inject
-	public Car(@Qualifier("smallTyre") Tyre frontLeft,@Qualifier("smallTyre") Tyre frontRight,@Qualifier("bigTyre") Tyre rearLeft,@Qualifier("bigTyre") Tyre rearRight,@Qualifier("fourCyl") Engine engineType) {
+	//@Inject
+	/*public Car(@Qualifier("smallTyre") Tyre frontLeft,@Qualifier("smallTyre") Tyre frontRight,@Qualifier("bigTyre") Tyre rearLeft,@Qualifier("bigTyre") Tyre rearRight,@Qualifier("fourCyl") Engine engineType) {
+		this.frontLeft=frontLeft;
+		this.frontRight=frontRight;
+		this.rearLeft=rearLeft;
+		this.rearRight=rearRight;
+		this.engineType=engineType;
+		
+	}*/
+	
+	public Car(Tyre frontLeft,Tyre frontRight,Tyre rearLeft, Tyre rearRight,Engine engineType) {
 		this.frontLeft=frontLeft;
 		this.frontRight=frontRight;
 		this.rearLeft=rearLeft;
