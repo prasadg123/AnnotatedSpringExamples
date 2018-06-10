@@ -6,7 +6,9 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
   	<context:annotation-config/>
-  	<context:component-scan base-package="com.prasad.car"></context:component-scan>
+  	<context:component-scan base-package="com.prasad.car">
+  		<context:include-filter type="annotation" expression="com.prasad.annot.AnotherRandomAnnotation"/>
+  	</context:component-scan>
 <!-- <bean id="smallTyre" class="com.prasad.car.SmallTyre">
 	<qualifier value="sTyre"/>
 </bean>

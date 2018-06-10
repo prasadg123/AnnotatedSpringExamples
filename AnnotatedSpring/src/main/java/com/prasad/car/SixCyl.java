@@ -2,10 +2,12 @@ package com.prasad.car;
 
 import org.springframework.stereotype.Component;
 
+import com.prasad.annot.AnotherRandomAnnotation;
 import com.prasad.annot.RandomDemoAnnotation;
 
 //@Component
-@RandomDemoAnnotation
+//@RandomDemoAnnotation
+@AnotherRandomAnnotation
 public class SixCyl implements Engine{
 
 	public int getNumberOfClinders() {
